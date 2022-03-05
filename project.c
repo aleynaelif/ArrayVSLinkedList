@@ -1,5 +1,3 @@
-//Aleyna Elif ÖZKAN 1801042652 HW-11
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -9,21 +7,19 @@
 typedef struct Node{
 	long int data;
 	struct Node *next;
-}nums; //for part1
+}nums;
 
 typedef struct structForLinked{
 	int data;
 	struct structForLinked *next;
-}forLinked;//for part2 linked list
+}forLinked;
 
 typedef struct structNotSame{
 	int n1;
 	int n2;
-}notSame;//for part2
+}notSame;
 
 
-
-//part1 functions
 long int *read_array(char *filename,long int *dataNumberArr);
 nums *read_linkedlist (char *filename,long int * dataNumLinked);
 void  charArrNULL(char *Arr,int n);
@@ -32,7 +28,6 @@ float * stats_linkedlist(nums *head, long int *datanum);
 float power(float base,int exponent);
 float returnReadTime(char *filename,long int *dataNumberArr,long int *arr,long int *dataNumLinked,nums *head,float *arrReadTime,float *linkedReadTime);
 float returnStatsTime(long int *dataNumberArr,long int *arr,long int *dataNumLinked,nums *head,float *arrStatTime,float *linkedStatTime);
-//part2 function
 notSame * part2(int *numOfNotSame);
 
 
@@ -58,7 +53,6 @@ linkedReadTime=&d;
 //calculates time for the read functions
 returnReadTime(filename, dataNumberArr,Arr,dataNumLinked,head,arrReadTime,linkedReadTime);
 
-printf("\n******************************* PART-1 *******************************\n");
 printf("\nTime for function read_array: %f seconds.\n",*arrReadTime);
 printf("Time for function read_linkedlist: %f seconds.\n\n",*linkedReadTime);
 printf("-----------------------------------------------------------------------\n\n");
@@ -91,8 +85,6 @@ printf("\t\t Min\t\tMax\t\tMean\t Std Deviation \n");
 printf("array\t--> \t%.2f \t  %.2f \t  %.2f \t  %.2f \t \n",resArr[0],resArr[1],resArr[2],resArr[3] );
 printf("linked list --> %.2f \t  %.2f \t  %.2f \t  %.2f \t \n\n",resLinked[0],resLinked[1],resLinked[2],resLinked[3] );
 
-//part2
-printf("\n\n******************************* PART-2 *******************************\n\n");
 int *numOfNotSame,h=0;
 numOfNotSame=&h;
 
