@@ -2,9 +2,6 @@
  Comperation between an array an a linked list 
 
 
-Write a complete program accomplishing all the tasks below.
-
-
 The program reads a text file named ‘list.txt’. This file contains a great number of comma 
 seperated random positive integers (e.g., N=1000000). The program should read this file only once and 
 store these numbers in the given order. Reading the file once means that you cannot read any portion of
